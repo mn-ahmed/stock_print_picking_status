@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <data>
-        <template id="report_delivery_document" inherit_id="stock.report_delivery_document">
-            <xpath expr="//div[@name='div_outgoing_address']" position="before">
-                <t t-set="printed" t-value="o.check_print()"/>
-            </xpath>
-        </template>
         <template id="report_picking" inherit_id="stock.report_picking">
             <xpath expr="//div[@name='div_outgoing_address']" position="before">
                 <t t-set="printed" t-value="o.check_print()"/>
