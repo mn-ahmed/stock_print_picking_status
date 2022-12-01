@@ -10,4 +10,9 @@ class StockPicking(models.Model):
     printed = fields.Boolean(tracking=True)
 
 
-
+    def check_print(self):
+        '''Used to enable chatter for Printed field on DO when print trigger from report actions'''
+        self.ensure_one()
+        if not self.printed:
+            self.printed = True
+        return True
