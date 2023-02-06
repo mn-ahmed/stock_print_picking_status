@@ -20,8 +20,5 @@
     'data': [
         'views/stock_picking_view.xml',    
         'report/stock_picking_report.xml',
-    ],
-    "cloc_exclude": [
-        "**/*", # can be used to ignore an entire module.
     ]
 }
